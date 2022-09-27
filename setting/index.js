@@ -1,42 +1,80 @@
 AppSettingsPage({
   build(props) {
-    return Section({}, [
-      Section(
-        {},
-        TextInput({
-          label: 'HoCom URL',
-          placeholder: 'https://hocom.site',
-          settingsKey: 'hocomURL',
-                  bold: true,
-                  subStyle: {
-                    color: '#333',
-                    fontSize: '14px',
-                  },
-                  maxLength: 200,
-                  onChange: (val) => {
-                    if (val.length < 12) {
-                      console.log("Is seems URL is too short...")
-                    }
-                  },
-        })
+    return View(
+      {
+        style: {
+          padding: '12px 20px',
+        },
+      },[
+      View(
+          {
+            style: {
+              borderBottom: '1px solid #eaeaea',
+              padding: '6px 0',
+              marginBottom: '6px',
+            },
+          },
+          [
+            TextInput({
+              label: 'HoCon URL',
+              placeholder: 'https://hocon.site',
+              settingsKey: 'hoconURL',
+              bold: true,
+              subStyle: {
+                bold: false,
+                fontSize: '14px',
+                marginBottom: '6px',
+              },
+              maxLength: 200,
+            }),
+          ]
       ),
-      Section(
-        {},
-        TextInput({
-          label: 'Auth key',
-          placeholder: '<<See at HoCom site>>',
-          settingsKey: 'hocomAuth'
-        })
-      ),
-
-      Section(
-        {},
-        TextInput({
-          label: 'Lamp host',
-          placeholder: 'lamp1',
-          settingsKey: 'hocomLamp'
-        })
-      ),
-    ])
+      View(
+        {
+          style: {
+            borderBottom: '1px solid #eaeaea',
+            padding: '6px 0',
+            marginBottom: '6px',
+          },
+        },
+        [
+            TextInput({
+              label: 'Lamp host',
+              placeholder: 'lamp1',
+              settingsKey: 'hoconLamp',
+              bold: true,
+              subStyle: {
+                bold: false,
+                fontSize: '14px',
+                marginBottom: '6px',
+              },
+              maxLength: 200,
+            }),
+          ]
+          ),
+          View(
+            {
+              style: {
+                borderBottom: '1px solid #eaeaea',
+                padding: '6px 0',
+                marginBottom: '6px',
+              },
+            },
+            [
+            TextInput({
+              label: 'Auth key',
+              placeholder: '<<See at HoCon site>>',
+              settingsKey: 'hoconAuth',
+              bold: true,
+              subStyle: {
+                bold: false,
+                fontSize: '14px',
+                marginBottom: '6px',
+              },
+            }),
+            ],
+          ),
+      ]
+    )
   }
 })

@@ -6,14 +6,15 @@ const fetchData = async (ctx, mode) => {
   try {
     // Requesting network data using the fetch API
 
-     lamp = "?id="+ settings.settingsStorage.getItem('hocomLamp');
-     host = settings.settingsStorage.getItem('hocomURL');
+     const lamp = "?id="+ settings.settingsStorage.getItem('hoconLamp');
+     const host = settings.settingsStorage.getItem('hoconURL');
+     const auth = settings.settingsStorage.getItem('hoconAuth');
 
      const data = await fetch({
-       url: host+'/api/lamp'+lamp+'&scene=' + mode,
+       url: host + '/api/lamp' + lamp + '&scene=' + mode,
        method: 'GET',
        headers: {
-         'Content-Type': 'application/json'
+         'Authorization': auth
        },
     });
     ctx.response({

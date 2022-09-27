@@ -6,11 +6,11 @@
     "appType": "app",
     "version": {
       "code": 1,
-      "name": "1.0.1"
+      "name": "1.0.2"
     },
     "icon": "icon.png",
     "vender": "zepp",
-    "description": "An application to control WIZ lamp via hocom service"
+    "description": "An application to control WIZ lamp via hocon service"
   },
   "permissions": [],
   "runtime": {
