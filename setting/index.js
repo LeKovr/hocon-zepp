@@ -70,6 +70,26 @@ AppSettingsPage({
                 bold: false,
                 fontSize: '14px',
                 marginBottom: '6px',
+                color: '#eaeaea',
+              },
+            }),
+            ],
+          ),
+          View(
+            {
+              style: {
+                borderBottom: '1px solid #eaeaea',
+                padding: '6px 0',
+                marginBottom: '6px',
+              },
+            },
+            [
+            Section({
+              description: 'This app works only with companion linux service HoCon, see https://github.com/LeKovr/hocon',
+              style: {
+                color: 'black',
+                fontSize: '12px',
+                marginBottom: '6px',
               },
             }),
             ],
