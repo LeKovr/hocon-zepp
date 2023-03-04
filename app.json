@@ -6,7 +6,7 @@
     "appType": "app",
     "version": {
       "code": 1,
-      "name": "1.0.3"
+      "name": "1.1.0"
     },
     "icon": "icon.png",
     "vender": "LeKovr",
@@ -60,9 +60,17 @@
         {
           "name": "t-rex2-w",
           "deviceSource": 419
+        },
+        {
+          "name": "gts4mini",
+          "deviceSource": 246
+        },
+        {
+          "name": "gts4mini-w",
+          "deviceSource": 247
         }
       ],
-      "designWidth": 480
+      "designWidth": 450
     }
   },
   "i18n": {

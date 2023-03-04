@@ -15,7 +15,7 @@ Page({
 
     logger.debug('page build invoked trex')
     this.state.day = hmUI.createWidget(hmUI.widget.BUTTON, {
-      y: px(60),
+      y: px(58),
       normal_color: 0x008000,
       press_color: DEFAULT_COLOR_TRANSPARENT,
       text: "Day",
@@ -27,7 +27,7 @@ Page({
     });
 
     this.state.night = hmUI.createWidget(hmUI.widget.BUTTON, {
-      y: px(160),
+      y: px(154),
       normal_color: 0xc0c0c0,
       press_color: DEFAULT_COLOR_TRANSPARENT,
       text: "Night", // TODO: gettext("btnNight")
@@ -39,7 +39,7 @@ Page({
     });
 
     this.state.off = hmUI.createWidget(hmUI.widget.BUTTON, {
-      y: px(260),
+      y: px(250),
       normal_color: DEFAULT_COLOR,
       press_color: DEFAULT_COLOR_TRANSPARENT,
       text: "Off",
@@ -51,8 +51,8 @@ Page({
     });
 
     this.state.anno = hmUI.createWidget(hmUI.widget.TEXT, {
-        x: px(96),
-        y: px(350),
+        x: px(20),
+        y: px(335),
         w: px(288),
         h: px(46),
         color: 0xffffff,
